@@ -5,27 +5,48 @@ export default function Header() {
   return (
     <header className="header">
       <img src={testLogo} alt="logo" className="logoTest" />
+
       <nav>
         <ul>
-          <div>
-            <li>
-              <Link to="/">home</Link>
-            </li>
-            <li>
-              <Link to="/cars">our cars</Link>
-            </li>
-            <li>
-              <Link to="/about">about</Link>
-            </li>
-          </div>
-          <div>
-            <li>
-              <Link to="/">login</Link>
-            </li>
-            <li>
-              <Link to="/">cart</Link>
-            </li>
-          </div>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/">cars</Link>
+            <ul>
+              <li>
+                <Link to="/">luxury car</Link>
+              </li>
+              <li>
+                <Link to="/">classic car</Link>
+              </li>
+              <li>
+                <Link to="/">tesla</Link>
+                <ul>
+                  <li>
+                    <Link to="/">tesla A</Link>
+                  </li>
+                  <li>
+                    <Link to="/">tesla B</Link>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link to="/">Motorcycle</Link>
+            <ul>
+              <li>
+                <Link to="/">BMV</Link>
+              </li>
+              <li>
+                <Link to="/">holly</Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link to="/">about</Link>
+          </li>
         </ul>
       </nav>
     </header>

@@ -1,10 +1,13 @@
+import Car from "./Car";
 import React from "react";
-import localCarUrl from "../url/localsCarUrl";
-export default function CarList() {
-  return <div>{
-    localCarUrl.map(item=>
-      return(
-        <Car key={item.id} {...item}/>
-      ))
-    }</div>;
+
+export default function CarList({ title, cars }) {
+  return (
+    <div>
+      <h1>{title}</h1>
+      {cars.map(item => {
+        return <Car key={item.id} {...item} />;
+      })}
+    </div>
+  );
 }
