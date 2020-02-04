@@ -23,7 +23,9 @@ Variables
   --slantedFont: "Kaushan Script", cursive;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBackground: #e8e4d3;
+  /* --mainBackground: #e8e4d3; */
+  --mainBackground: #a8b5c4;
+
   --mainOverlay: rgba(35, 10, 36, 0.4);
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -146,6 +148,8 @@ Buttons
   text-align: center;
 }
 .header {
+  width: 80%;
+  margin: 0 auto;
   justify-content: center;
 }
 
@@ -218,4 +222,9 @@ Buttons
   position: absolute;
   left: 100%;
   top: 0;
+}
+
+.faced {
+  width: 80%;
+  margin: 0 auto;
 }

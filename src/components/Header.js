@@ -15,7 +15,7 @@ export default function Header() {
             <Link to="/">cars</Link>
             <ul>
               <li>
-                <Link to="/">luxury car</Link>
+                <Link to="/cars">luxury car</Link>
               </li>
               <li>
                 <Link to="/">classic car</Link>
@@ -45,7 +45,7 @@ export default function Header() {
             </ul>
           </li>
           <li>
-            <Link to="/">about</Link>
+            <Link to="/about">about</Link>
           </li>
         </ul>
       </nav>
